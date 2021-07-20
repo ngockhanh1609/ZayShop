@@ -383,10 +383,15 @@ border: 1px solid #dee2e6;
 #footer .contact{
     line-height: 69.650px;
     margin-bottom: 16px;
+    align-items: center;
 }
 #footer ul li a:hover{
     color: #59ab6e
     !important;
+}
+#footer .contact-email{
+    display: flex;
+    
 }
 #footer .contact-email input{
 width: 300px;

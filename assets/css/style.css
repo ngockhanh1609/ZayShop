@@ -315,6 +315,7 @@ border: 1px solid #dee2e6;
 #footer .contact{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #footer .rows{
     margin: -12px;
@@ -391,7 +392,8 @@ border: 1px solid #dee2e6;
 }
 #footer .contact-email{
     display: flex;
-    height: 50px;    
+    height: 50px;
+    align-items: center;   
 }
 #footer .contact-email input{
 width: 300px;

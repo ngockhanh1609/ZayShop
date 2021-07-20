@@ -391,8 +391,8 @@ border: 1px solid #dee2e6;
     !important;
 }
 #footer .contact-email{
-    display: flex;
-    height: 50px;
+    display: flex !important  ;
+    height: 50px !important;
     align-items: center;   
 }
 #footer .contact-email input{

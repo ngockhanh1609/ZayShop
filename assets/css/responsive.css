@@ -11,6 +11,9 @@
  #container .col{
      width: 100%;
  }
+ #footer .contact-email {
+     display: block !important;
+ }
  #footer .btn,
  #footer .contact-email input{
     border-radius: 8px ;

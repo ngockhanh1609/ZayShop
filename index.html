@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/8440a0cd38.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="assets/js/main.js"></script>
+
     
 </head>
 <body>
@@ -256,8 +256,7 @@
         <!-- End content -->
         <!-- Start footer -->
         <div id="footer">
-            <div class="container d-flex">
-                
+            <div class="container">
                 <div class="rows">
                     <div class="col">
                         <p>Zay Shop</p>
@@ -328,28 +327,6 @@
         </div>
         <!-- Start footer -->
     </div>
-    <script>
-        var header = document.getElementById('header-bot');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
-        mobileMenu.onclick = function() {
-            var isClose = header.clientHeight === headerHeight;
-            if(isClose){
-                header.style.height = 'auto';
-            }
-            else{
-                header.style.height = '91px';
-            }
-        }
-        var menuItems = document.querySelectorAll('#header-bot .nav-bot li a[href*="#"] ');
-        for(var i=0; i < menuItems.length;i++){
-            var menuItem = menuItems[i];
-            menuItem.onclick = function(){
-                header.style.height = '91px';
-
-            }
-        }
-        
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

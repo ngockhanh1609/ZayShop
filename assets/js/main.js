@@ -1,5 +1,24 @@
 // Sub menu
+var header = document.getElementById('header-bot');
+var mobileMenu = document.getElementById('mobile-menu');
+var headerHeight = header.clientHeight;
+mobileMenu.onclick = function() {
+    var isClose = header.clientHeight === headerHeight;
+    if(isClose){
+        header.style.height = 'auto';
+    }
+    else{
+        header.style.height = '91px';
+    }
+}
+var menuItems = document.querySelectorAll('#header-bot .nav-bot li a[href*="#"] ');
+for(var i=0; i < menuItems.length;i++){
+    var menuItem = menuItems[i];
+    menuItem.onclick = function(){
+        header.style.height = '91px';
 
+    }
+}
 
 
 //Slide 

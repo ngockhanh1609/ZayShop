@@ -6,6 +6,8 @@
  #container .rows-content{
      display: block;
  }
+ .col-form,
+ .col-map ,
  #footer .col,  
  #container2 .col,
  #container .col{

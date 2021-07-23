@@ -43,6 +43,12 @@ justify-content: space-between;
 .p{
     margin-bottom: 16px;
 }
+.col-space{ 
+    padding: 0px 12px;
+}
+.col-half{
+    width: 50%;
+}
 /* Start Header */
 
 #header-top{
@@ -223,7 +229,6 @@ display: inline-block;
 
 #container2 .col{
     margin-bottom: 24px;
-    padding: 0px 12px;
     width: 33.33%;
 }
 #container2 .d-flex{
@@ -367,7 +372,43 @@ padding: 48px 0px;
     margin: 24px 0px 8px;
 }
 
-
+/* contact */
+.col-map{
+    width: 50%;
+    height: auto;
+}
+.map{
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+.col-full{
+    width: 100%;
+}
+.col-form{
+    width: 50%;
+}
+#container2 .col-full,
+#container2 .col-half{
+    margin-bottom: 16px;
+}
+.form-control{
+    padding: 6px 12px;
+    border: 1px solid rgb(219, 202, 202);
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 100%;
+    margin-top: 4px;
+}
+.message-control{
+    height: 338px;
+}
+.btn-left{
+    float: right;
+    margin: 0px 12px;
+    
+}
 /* Footer */
 #footer{
     background-color: #212934;
@@ -394,7 +435,7 @@ padding: 48px 0px;
     padding-top: 10px;
     line-height: 27px !important;
 }
-#footer .icon{
+#footer .hover .icon{
     padding-right: 10px;
 }
 #footer ul li a{

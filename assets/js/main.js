@@ -54,6 +54,7 @@ for(var i=0; i < menuItems.length;i++){
 // }
 var slideIndex = 0;
 showSlides();
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("carousel-item");

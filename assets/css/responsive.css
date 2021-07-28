@@ -20,6 +20,16 @@
  #footer .contact-email input{
     border-radius: 8px ;
  }
+ .col-33{
+    width: 33.33%;
+ }
+ .col-66{
+     width: 66.66%;
+ }
+
+ #header-bot .nav-logo{
+     line-height: 91px;
+ }
 }
 /* tab */
 @media (max-width:768px){
@@ -51,8 +61,11 @@
         order:2;
         width: 100%;
     }
-    
+    #header-bot{
+        overflow: hidden;
+    }
 }
+
 @media (max-width:768px) and (min-width:739px) {
 .container{
         margin-left: 24px;

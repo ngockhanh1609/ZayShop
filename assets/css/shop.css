@@ -1,0 +1,148 @@
+/* commom */
+.lien-he{
+    color: rgb(82,187,242);
+}
+.font-size-status{
+    font-size: 15px;
+}
+.p-12{
+    padding:0px 12px;
+}
+
+
+
+
+
+
+/* content */
+#shop{
+    margin: 48px 0px;
+}
+
+#shop .filter{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#shop .sex{
+    font-size: 24px;
+}
+.sex:hover{
+    color: rgb(89,171,110)
+}
+/* product */
+.product-grid:hover .price > p{
+    display: none;
+}
+.buy{
+    display: none;
+}
+ .btn-buy:hover{
+    background-color:rgb(89,171,110);
+    transition: .7s;
+}
+.product-grid:hover .buy{
+    display: flex;
+    
+}
+.product-grid:hover .product-img .pic-1{
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.product-grid .product-img{ position: relative; }
+.product-grid .product-img a.img{ display: block; }
+.product-grid .product-img img{
+    width: 100%;
+    height: auto;
+}
+.product-img .pic-2{
+   
+    filter: blur(10px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.product-grid:hover .product-img .pic-2{ filter: blur(0);opacity: 1; }
+.product-grid .product-img{ position: relative; }
+.product-grid .product-img a.img{ display: block; }
+.product-grid .product-img img{
+    width: 100%;
+    height: auto;
+}
+.title a{
+    color:#000;
+}
+.title:hover a{
+    color:rgb(89,171,110);
+}
+.description{
+    color:rgb(208,208,208);
+}
+.btn-buy{
+    width: 75%;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    margin-right: 2px;   
+    border: none;   
+    cursor: pointer;
+}
+.price{
+    line-height: 40px;
+    font-size: 20px;
+}
+.quickview:hover{
+    opacity: .8;
+    transition: .7s;
+}
+.quickview{
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    background: #000;
+    display: inline-block;
+}
+
+.text-warning{
+    color:rgb(237,232,97)
+}
+.text-muted{
+    color: rgb(188,188,188);
+}
+/* page number */
+.pages-number{
+    justify-content: flex-end;
+}
+.pagination {
+    display: inline-flex;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}

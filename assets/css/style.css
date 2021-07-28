@@ -12,7 +12,13 @@ html{
 /* Common */
 .d-flex{
     display: flex;
-justify-content: space-between;
+
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.d-inline{
+    display:inline ;
 }
 .container{
     width: 72rem;
@@ -48,6 +54,61 @@ justify-content: space-between;
 }
 .col-half{
     width: 50%;
+}
+.col-33{
+    width: 33.33% !important;
+}
+.col-66{
+    width: 66.66%;
+}
+.col-25{
+    width: 25%;
+}
+.col-75{
+    width: 75%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    font-weight: 100;
+}
+img{
+    width: 100%;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.bolder{
+    font-weight: bold;
+}
+.list-style{
+    list-style: none;
+}
+    .justify-content-around{
+    justify-content: space-around;
+}
+.p-left-right-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.margin--12{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.border-bottom{
+    border-bottom: 1px solid rgb(229,229,229);
+}
+.p-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.p-b-12{
+    padding-bottom: 12px;
 }
 /* Start Header */
 
@@ -89,6 +150,7 @@ float: right;
 height: 91px;
 max-width: 100%;
 z-index: 1;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 scroll-behavior: smooth;
 }
@@ -103,7 +165,7 @@ margin: 0 8px 16px 0px;
 #header-bot .nav-logo a{
     font-size: 48px;
     color: #59ab6e !important;
-    font-weight:bolder !important;     
+    font-weight:500 !important;     
 }
 #header-bot .nav-bot{
     width: 550px;
@@ -148,6 +210,9 @@ margin: 0 8px 16px 0px;
 #header-bot li:hover .subnav{
     display: block;
 }
+#header-bot .subnav >li{
+    line-height: 40px;
+}
 #header-bot .nav .subnav{
     display: none;
     position: absolute;
@@ -158,6 +223,7 @@ margin: 0 8px 16px 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         top: 100%;
         z-index: 1;
+
 }
 /* End Header */
 
@@ -397,7 +463,7 @@ padding: 48px 0px;
 }
 .map{
     width: 100%;
-    height: 500px;
+    height: 100%;
     border: none;
 }
 .col-full{
@@ -583,4 +649,8 @@ padding: 48px 0px;
         opacity: 1;
         transform: translateY(0px);
     }
+}
+.bread-crumb{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
 }

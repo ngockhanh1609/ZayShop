@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/8440a0cd38.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <script src="assets/js/shop.js"></script>
 </head>
 <body>
     <div class="wraper">
@@ -125,7 +126,9 @@
                                             <p>350.000đ</p>
                                             <div class="buy ">
                                             <button type="button" class="btn-buy text-align-center  "><i class=" fa fa-shopping-basket " style="padding-right:8px;"></i> Option</button>
-                                            <a href="" class="quickview text-align-center"><i class="fas fa-eye" style="color: aliceblue;"></i></a>
+                                            <div  class=" quickview text-align-center js-quickview" style="cursor: pointer;">
+                                                <i class="fas fa-eye " style="color: aliceblue;"></i>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -510,6 +513,45 @@
         </div>
     </div>
 </div>
+<div class="modal-product modal-product-js d-flex justify-content-between">
+    <div class="quickview-product d-flex js-modal-quickview"> 
+        <div class="col-half">
+            <a href=""><img src="https://product.hstatic.net/1000351433/product/b018ca29-f9a5-4d0d-b9b8-c24e466bd1d0_8ddd4d739498419981b256f3d9aa8b90_master.jpg" alt=""></a>
+        </div>
+        <div class="col-half">
+            <div class="title p-b-12">
+                <h2>RABBIT CYBER</h2>
+            </div>
+            <div class="status">
+                <span class="vendor_"><span>Thương hiệu: </span>Đang cập nhật</span>		
+                <span class="line">|</span>
+                Tình trạng: <span class="soluong">Còn hàng</span>
+            </div>
+            <div class="descriptions p-b-12">
+                <ul class="list-style">
+                    <li>Chất liệu: 100% Cotton</li>
+                    <li>Màu sắc: Đen</li>
+                </ul>
+            </div>
+            <div class=" p-b-12">
+                <h4>Số lượng:</h4>
+                
+            </div>  
+            <div class="p-b-12 amout ">
+                <a class="button" href="" >-</a>
+                <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                <a class="button" href="" >+</a>
+            </div>
+            <div class="btn-quickview">
+                <button type="button" class="btn-buy text-align-center  ">Buy now</button>
+            </div>       
+        </div>
+        <div class="modal-close js-quickview-close">
+            <i class="fas fa-times" style="color: black;"></i>
+        </div>
+    </div>
+</div>
+</div>
 <script src="assets/js/main.js"></script>
 <script>
     const searchBtn = document.querySelector('.js-search'); 
@@ -528,6 +570,24 @@
     modalContainer.addEventListener('click',function(event){
         event.stopPropagation()
     })
+</script>
+<script>
+const quickviewBtn = document.querySelector('.js-quickview'); 
+const modalProduct = document.querySelector('.modal-product-js');
+const closeQuickview = document.querySelector('.js-quickview-close');
+const modalQuickview = document.querySelector('.js-modal-quickview')
+function ShowQuick(){
+    modalProduct.classList.add('openn');
+}
+function hideQuick(){
+    modalProduct.classList.remove('openn');
+}
+quickviewBtn.addEventListener('click', ShowQuick);
+closeQuickview.addEventListener('click',hideQuick);
+modalProduct.addEventListener('click',hideQuick)
+modalQuickview.addEventListener('click',function(event){
+    event.stopPropagation()
+})
 </script>
 </body>
 </html>

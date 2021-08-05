@@ -1,0 +1,38 @@
+/* contact */
+
+.col-map{
+    height: 400px;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.col-full{
+    width: 100%;
+}
+
+#container2 .col-full,
+#container2 .col-half{
+    margin-bottom: 16px;
+}
+.col-form{
+    margin-bottom: 32px;
+}
+.form-control{
+    padding: 10px 12px;
+    border: 1px solid rgb(219, 202, 202);
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 100%;
+    margin-top: 4px;
+}
+.message-control{
+    height: 338px;
+}
+.btn-left{
+    float: right;
+    margin: 0px 12px;
+    
+}

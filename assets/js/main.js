@@ -11,14 +11,19 @@ mobileMenu.onclick = function() {
         header.style.height = '91px';
     }
 }
-var menuItems = document.querySelectorAll('#header-bot .nav-bot li a[href*="#"] ');
-for(var i=0; i < menuItems.length;i++){
-    var menuItem = menuItems[i];
-    menuItem.onclick = function(){
-        header.style.height = '91px';
-
-    }
-}
+// var menuItems = document.querySelectorAll('#header-bot .nav-bot li a[href*="html"] ');
+// for(var i=0; i < menuItems.length;i++){
+//     var menuItem = menuItems[i];
+//     menuItem.onclick = function(event){
+//         var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+//         if(isParentMenu){
+//             event.preventDefault();
+//         }
+//         else{
+//             header.style.height = '91px';
+//         }
+//     }
+// }
 
 //search
 

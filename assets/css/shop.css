@@ -146,3 +146,74 @@
     color: white;
   }
   .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+  /* QuickView */
+
+  .modal-product{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.4)  ;
+    display: none;
+    
+}
+.quickview-product{
+    position: absolute;
+    width: 970px;
+    top: 20%;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 0;
+}
+.button{
+    
+    font-size: 27px;
+    border: solid 1px #e5e5e5;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 33px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    top: 0;
+    padding: 0px;
+    font-weight: bold;
+    float: left;
+}
+.quantity-selector  {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+    width: 70px;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 0px;
+    font-size: 15px;    border: 1px solid #ccc;
+}
+.amout{
+    overflow: hidden;
+}
+.btn-quickview{
+    margin-top: 20px;
+}
+.modal-product.openn{
+    display: flex !important;
+}
